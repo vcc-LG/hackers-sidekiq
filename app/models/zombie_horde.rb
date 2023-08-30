@@ -1,0 +1,2 @@
+class ZombieHorde < ApplicationRecord
+end
