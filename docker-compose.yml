@@ -19,7 +19,7 @@ services:
     environment:
       POSTGRES_PASSWORD: password
   redis:
-    image: redis:6.0
+    image: redis:latest
     command: redis-server
     ports:
       - '6379:6379'
