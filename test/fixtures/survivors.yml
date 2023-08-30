@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  health: 1
+  stamina: 1
+  hunger: 1
+  group: one
+
+two:
+  name: MyString
+  health: 1
+  stamina: 1
+  hunger: 1
+  group: two
