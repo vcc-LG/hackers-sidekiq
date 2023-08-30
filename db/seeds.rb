@@ -1,6 +1,6 @@
 # Clean the database
-Group.destroy_all
 Survivor.destroy_all
+Group.destroy_all
 Resource.destroy_all
 ZombieHorde.destroy_all
 
