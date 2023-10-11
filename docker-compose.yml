@@ -36,10 +36,12 @@ services:
       - '/myapp/tmp' # don't mount tmp directory
     environment:
       - REDIS_URL_SIDEKIQ=redis://redis:6379/1
-  jmeter:
-    image: justb4/jmeter
+  locust:
+    build: ./locust  # Build the Locust container using the Dockerfile
+    ports:
+      - "8089:8089"  # Map Locust's web interface port
     volumes:
-      - /test/jmeter:/jmeter/test/plan
+      - ./locust:/app  # Mount the Locust test script directory
 volumes:
   redis:
   postgres:
