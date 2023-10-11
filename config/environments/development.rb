@@ -1,4 +1,5 @@
 require "active_support/core_ext/integer/time"
+require 'cronitor'
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
@@ -58,6 +59,10 @@ Rails.application.configure do
 
   # Suppress logger output for asset requests.
   config.assets.quiet = true
+
+  config.hosts.clear
+
+  Cronitor.api_key = '1570a52a95e34b9fa371df10cffc25c7'
 
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
