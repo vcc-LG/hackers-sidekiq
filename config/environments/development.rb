@@ -62,6 +62,8 @@ Rails.application.configure do
 
   config.hosts.clear
 
+  # config.hosts << /.*\.ngrok\.io/
+
   Cronitor.api_key = '1570a52a95e34b9fa371df10cffc25c7'
 
   # Raises error for missing translations.
